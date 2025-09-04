@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Veterans India</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://www.veteransindia.com/assets/images/favicon.jpg" rel="shortcut icon" type="image/jpg">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    xintegrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+EN4pYB4a3+YVZb0Yyp7+4b+Xl+9g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+        }
+        .tricolor-border {
+            background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+            height: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <!-- Veterans India Logo -->
+                <img src="https://www.veteransindia.com/assets/images/favicon.jpg" alt="Veterans India Logo" class="h-12 w-12 rounded-full">
+                <h1 class="text-2xl md:text-3xl font-black text-gray-900 tracking-wide">Veterans India</h1>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-lg font-medium text-gray-700">
+                <a href="#" class="hover:text-green-600 font-semibold transition-colors">Home</a>
+                <a href="#" class="text-green-600 font-bold">About Us</a>
+                <a href="#" class="hover:text-green-600 font-semibold transition-colors">Initiatives</a>
+                <a href="#" class="hover:text-green-600 font-semibold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Login Button -->
+            <div class="hidden md:flex">
+                <button class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition-transform transform hover:scale-105 shadow-md">Login</button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 text-3xl focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-8 w-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden bg-white shadow-md border-t border-gray-200">
+            <nav class="flex flex-col space-y-4 px-6 py-4 text-lg font-medium text-gray-700">
+                <a href="#" class="hover:text-green-600">Home</a>
+                <a href="#" class="text-green-600 font-bold">About Us</a>
+                <a href="#" class="hover:text-green-600">Initiatives</a>
+                <a href="#" class="hover:text-green-600">Contact</a>
+                <button class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition">Login</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-16 space-y-20">
+
+        <!-- Hero Section -->
+        <section class="relative h-[28rem] md:h-[32rem] rounded-3xl overflow-hidden shadow-2xl">
+            <!-- Background Image -->
+            <img src="https://placehold.co/1600x600/002244/FFFFFF?text=Nation+First+–+Together+for+Viksit+Bharat+%402047" 
+                alt="Patriotic Banner" 
+                class="absolute inset-0 w-full h-full object-cover">
+
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-orange-500 via-white/ to-green-600"></div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">
+                    Nation First – Together for Viksit Bharat @2047
+                </h2>
+                <p class="text-lg md:text-2xl font-medium mb-8">
+                    A self-reliant and progressive India, built by its veterans.
+                </p>
+                <button class="bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-transform transform hover:scale-105 shadow-xl">
+                    Join Our Movement
+                </button>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl">
+            <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">About Us</h2>
+            <div class="tricolor-border mb-8"></div>
+            <p class="text-gray-700 mb-6 text-lg md:text-xl leading-relaxed">
+                Founded in 2015 by <strong class="text-gray-900">Dr. B.K. Mishra</strong>, Veterans India is a national, apolitical, people-powered patriotic movement with over <strong class="text-green-600">3.8 million members.</strong>
+            </p>
+            <p class="text-gray-700 text-lg md:text-xl leading-relaxed">
+                Our inclusive philosophy—<em>"Anyone who can say Jai Hind and Vande Mataram can join Veterans India"</em>—unites citizens across all divides. We foster nationalism, empower youth, support veterans and martyrs' families, and contribute to a self-reliant and progressive Bharat.
+            </p>
+        </section>
+
+        <!-- Our Initiatives Section -->
+        <section id="initiatives" class="p-10 md:p-16 rounded-[3rem] shadow-2xl bg-gradient-to-b from-gray-50 to-gray-200">
+            <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-tight text-gray-900">Our Initiatives</h2>
+            <div class="tricolor-border mb-10"></div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Initiative Card -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-t-8 border-orange-500 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="font-bold text-2xl text-orange-600 mb-2">Patriotic Events</h3>
+                    <p class="text-gray-600">Vijay Diwas celebrations, patriotic runs on Republic & Independence Day, uniting citizens in national pride.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-t-8 border-green-600 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="font-bold text-2xl text-green-600 mb-2">Awards & Welfare</h3>
+                    <p class="text-gray-600">Pride of Nation Awards and programs to support martyrs' families and veterans.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-t-8 border-blue-600 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="font-bold text-2xl text-blue-600 mb-2">Youth & Empowerment</h3>
+                    <p class="text-gray-600">Self-defense for women, rural sports meets, skill-building & educational opportunities.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-t-8 border-indigo-600 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="font-bold text-2xl text-indigo-600 mb-2">Education & Collaborations</h3>
+                    <p class="text-gray-600">Partnered with AICTE, JNU, BYJU's, and more to deliver learning and nation-building programs.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-t-8 border-green-700 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                    <h3 class="font-bold text-2xl text-green-700 mb-2">Environment & Cleanliness</h3>
+                    <p class="text-gray-600">Swachh Bharat drives, tree planting, water conservation for a cleaner, greener India.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="stats" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-10 rounded-3xl shadow-2xl text-center border-t-8 border-green-600 hover:scale-105 transition-transform">
+                <p class="text-5xl md:text-6xl font-black text-orange-600 mb-4">38L+</p>
+                <p class="text-gray-700 text-lg font-semibold">Members Onboarded</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-2xl text-center border-t-8 border-green-600 hover:scale-105 transition-transform">
+                <p class="text-5xl md:text-6xl font-black text-orange-600 mb-4">6.5K+</p>
+                <p class="text-gray-700 text-lg font-semibold">HEIs Registered</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-2xl text-center border-t-8 border-green-600 hover:scale-105 transition-transform">
+                <p class="text-5xl md:text-6xl font-black text-orange-600 mb-4">1.92L+</p>
+                <p class="text-gray-700 text-lg font-semibold">Panchayats Covered</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-2xl text-center border-t-8 border-green-600 hover:scale-105 transition-transform">
+                <p class="text-5xl md:text-6xl font-black text-orange-600 mb-4">180+</p>
+                <p class="text-gray-700 text-lg font-semibold">CSR Partners</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-20">
+        <div class="tricolor-border"></div>
+        <div class="container mx-auto px-6 py-12 text-center space-y-8 text-lg">
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 font-medium mb-4">
+                <a href="#" class="hover:text-white transition">About</a>
+                <a href="#" class="hover:text-white transition">Contact</a>
+                <a href="#" class="hover:text-white transition">Donate</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Privacy</a>
+            </div>
+            <p class="text-gray-400">9911511967 | info@veteransindia.com | www.veteransindia.com</p>
+            <div class="flex justify-center gap-8 text-2xl">
+                <!-- Facebook -->
+                <a href="#" class="text-gray-300 hover:text-blue-500">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="#" class="text-gray-300 hover:text-blue-600">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <!-- YouTube -->
+                <a href="#" class="text-gray-300 hover:text-red-500">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="#" class="text-gray-300 hover:text-blue-400">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm mt-8">&copy; 2025 Veterans India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
